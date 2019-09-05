@@ -1,22 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
+import headerStyles from "./header.module.scss"
 
 function Header() {
   return (
-    <header>
+    <header className={headerStyles.header}>
       <h1>Philip Johnson</h1>
       <nav>
-        <ul style={{ display: "flex" }}>
-          <li style={{ margin: "10px" }}>
-            <Link to="/">Home</Link>
+        <ul>
+          <li>
+            <Link className={headerStyles.link} to="/">
+              Home
+            </Link>
           </li>
-          <li style={{ margin: "10px" }}>
+          <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li style={{ margin: "10px" }}>
+          <li>
             <Link to="/about">About</Link>
           </li>
-          <li style={{ margin: "10px" }}>
+          <li>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>

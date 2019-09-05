@@ -1,15 +1,13 @@
-import React from 'react'
-import Layout from '../components/layout'
-const BlogPage = () => {
-    return (
-        <div>
-            <Layout>
+import React from "react"
+import Layout from "../components/layout"
 
-            <h1>Blog</h1>
-            <p>Posts will show up here later on</p>
-            </Layout>
-        </div>
-    )
+const BlogPage = () => {
+  return (
+    <Layout>
+      <h1>Blog</h1>
+      <p>Posts will show up here later on</p>
+    </Layout>
+  )
 }
 
 export default BlogPage
